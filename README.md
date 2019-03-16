@@ -123,7 +123,7 @@ import { characters } from './data';
 4.  () => observer.complete('We are done!');
 });
 ```
-Rad 1. Skapar en ny instans av type **Observagle** som vi placerar i variabeln *characters$. Vi använder **$** tecknet för att indikerar att vi får tillbaka en *Observable*. **$** tecknet har blivit vedertagen standard för att indikera en *Observable* typ.
+Rad 1. Skapar en ny instans av type **Observable** som vi placerar i variabeln *characters$. Vi använder **$** tecknet för att indikerar att vi får tillbaka en *Observable*. **$** tecknet har blivit vedertagen standard för att indikera en *Observable* typ.
 
 Rad 2. Här använder vi metoden *error()* om något går fel.
 
