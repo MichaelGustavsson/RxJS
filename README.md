@@ -79,7 +79,7 @@ Observables är den viktigaste komponenten i RxJS. En Observable ser allt data s
 
 ### Skapa Observables
 Det finns tre huvudsakliga sätt att skapa en *Observable* på.
-* Skapa en ny Observable genom att instantiera en ny instans av typen **Observable** via dess constructor
+* Skapa en ny *Observable* genom att instantiera en ny instans av typen **Observable** via dess konstruktor
 * Använda någon av funktionerna i RxJS
 * Anropa en funktion som returnerar typen *Observable*
 
