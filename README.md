@@ -92,5 +92,21 @@ Ett *Observer* object har tre valfria metoder:
 * error(), som kan användas för att rapportera problem eller fel som inträffat
 * complete(), som kan användas för att tala om när allt data i strömmen är hanterat och klart
 
+Låt oss se på ett par enkla exempel.
+```
+import { Observable } from 'rxjs';
+import { characters } from './data';
+// Using the constructor method.
+let characters$ = new Observable(observer => {
+  if (something went wrong){
+    observer.error('Something bad happened’);
+  }
+  for (let character of characters) {
+    observer.next(character);
+  }
+  () => observer.complete('We are done!');
+});
+```
+
 
 
