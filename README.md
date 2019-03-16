@@ -83,6 +83,14 @@ Det finns tre huvudsakliga sätt att skapa en *Observable* på.
 * Använda någon av funktionerna i RxJS
 * Anropa en funktion som returnerar typen *Observable*
 
+Låt oss titta på hur man skapar en *Observable* ifrån grunden.
+Vi kan använda konstruktorn för att instantiera en ny instans eller så kan vi användare hjälpmetoden **create**. Oavsett vilket sätt vi använder så använder vi samma argument:
+En funktion som tar som argument ett *Observer* objekt.
+
+Ett *Observer* object har tre valfria metoder:
+* next(), för att ange ett ny värde i strömmen
+* error(), som kan användas för att rapportera problem eller fel som inträffat
+* complete(), som kan användas för att tala om när allt data i strömmen är hanterat och klart
 
 
 
