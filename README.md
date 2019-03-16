@@ -18,5 +18,5 @@ console.log(`Found character: ${character.name}`);
 // asynchronous call
 
 let character = findCharacterAsync(1);
-character.then(c => console.log(`Found character: ${c.name}`);
+character.then(c => console.log(`Found character: ${c.name}`);
 ```
