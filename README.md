@@ -130,3 +130,17 @@ Rad 2. Här använder vi metoden *error()* om något går fel.
 Rad 3. Om ingenting gått fel kan vi här fylla på vår *Observable* med data.
 
 Rad 4. Med hjälp av metoden *complete* talar vi här om att allt data är hanterat och inget mer finns att få.
+
+## Skapa *Observables* från befintligt data
+Det finns flera metoder att skapa *observables* ifrån befintligt data, bland annat kan vi använda följande metoder:
+* defer()
+* emptyFrom()
+* fromEvent()
+* interval()
+* of()
+* range()
+* throw()
+* timer()
+
+Låt oss titta på några av de vanligaste.
+
