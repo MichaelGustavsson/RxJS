@@ -36,3 +36,15 @@ for (let character of characters) {
   console.log(`Character: ${character.name}`)
 }
 ```
+
+4.
+```
+// Stream of infinite data
+
+function buttonClick(event) {
+  console.log('Clicked the button’);
+  console.log(event);
+}
+let button = document.querySelector('#myButton');
+button.addEventListener('click', buttonClick);
+```
