@@ -20,3 +20,19 @@ console.log(`Found character: ${character.name}`);
 let character = findCharacterAsync(1);
 character.then(c => console.log(`Found character: ${c.name}`);
 ```
+3.
+```
+// Stream of data using arrays, a finitestream
+
+const characters = [
+{name: 'Luke Skywalker', homeworld: 'Tatooine'},
+{name: 'Darth Vader', homeworld: 'Tatooine'},
+{name: 'Leia Organa', homeworld: 'Alderaan'},
+{name: 'Obi-Wan Kenobi', homeworld: 'Stewjon'},
+{name: 'Chewbacca', homeworld: 'Kashyyyk'},
+{name: 'Han Solo', homeworld: 'Corellia’}
+
+for (let character of characters) {
+  console.log(`Character: ${character.name}`)
+}
+```
