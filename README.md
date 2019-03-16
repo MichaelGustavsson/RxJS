@@ -48,3 +48,17 @@ function buttonClick(event) {
 let button = document.querySelector('#myButton');
 button.addEventListener('click', buttonClick);
 ```
+
+Tittar vi på de fyra olika exemplena så ser vi att vi har fyra olika sätt att hantera dem på. Vore det inte trevligt att endast ha ett sätt att hantera data på oavsett om det är synkront, asynkront, enkla anrop, listor eller DOM händelser. Det är här som RxJS kommer in.
+
+Genom att använda RxJS får vi ett enda **API** för att just hantera olika typer av dataströmmar. **API**:et lyssnar (***Observe***) på värden som produceras av en ***Observable***
+
+En Observable kan returnera värden/data från
+* Enkla anrop som returnera **ett** värde
+* Listor
+* XMLHttpRequest - AJAX
+* Promises
+* DOM händelser
+
+## RxJS byggstenar
+
