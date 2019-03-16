@@ -93,11 +93,12 @@ Ett *Observer* object har tre valfria metoder:
 * complete(), som kan användas för att tala om när allt data i strömmen är hanterat och klart
 
 Låt oss se på ett par enkla exempel.
+1. Första exemplet använder vi konstruktor metoden för att skapa en ny *Observable*.
 ```
 import { Observable } from 'rxjs';
 import { characters } from './data';
-// Using the constructor method.
-let characters$ = new Observable(observer => {
+// Using the constructor method.
+let characters$ = new Observable(observer => {
   if (something went wrong){
     observer.error('Something bad happened’);
   }
