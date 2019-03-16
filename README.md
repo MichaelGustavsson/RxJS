@@ -6,9 +6,16 @@ RxJS ger oss ***ett*** API att hantera synkrona och asynkrona funktioner, genom 
 ## Vad försöker RxJS lösa åt oss?
 Om vi tittar på några olika exempel på dagliga uppgifter som vi som utvecklare måste hantera.
 
+1.
 ```
 // synchronous call
 
 let character = findCharacter(1);
 console.log(`Found character: ${character.name}`);
+```
+2.
+```
+// asynchronous call
+
+let character = findCharacterAsync(1);character.then(c => console.log(`Found character: ${c.name}`);
 ```
