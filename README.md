@@ -75,7 +75,14 @@ Dokumentationens https://rxjs-dev.firebaseapp.com/api/index/class/Observable def
 
 **A representation of any set of values over any amount of time**
 
-Observables är den viktigaste komponenten i RxJS. En Observable ser allt data som en ström av information oavsett om det är synkron eller asynkron information.
+Observables är den viktigaste komponenten i RxJS. En Observable ser allt data som en ström av information oavsett om det är synkron eller asynkron information som kommer via enkla funktioner, listor, DOM eller promises.
+
+### Skapa Observables
+Det finns tre huvudsakliga sätt att skapa en *Observable* på.
+* Skapa en ny Observable genom att instantiera en ny instans av typen **Observable** via dess constructor
+* Använda någon av funktionerna i RxJS
+* Anropa en funktion som returnerar typen *Observable*
+
 
 
 
