@@ -69,3 +69,13 @@ RxJS består av:
 * Subject
 * Schedulers
 
+## Observables
+Vad är en *Observable*?
+Dokumentationens https://rxjs-dev.firebaseapp.com/api/index/class/Observable definition:
+
+**A representation of any set of values over any amount of time**
+
+Observables är den viktigaste komponenten i RxJS. En Observable ser allt data som en ström av information oavsett om det är synkron eller asynkron information.
+
+
+
