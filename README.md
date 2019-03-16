@@ -112,7 +112,7 @@ import { characters } from './data';
 ```
 import { Observable } from 'rxjs';
 import { characters } from './data';
-// Using the constructor method.
+// Using the create method.
 1. let characters$ = Observable.create(observer => {
   if (something went wrong){
 2.     observer.error('Something bad happened’);
