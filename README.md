@@ -60,5 +60,12 @@ En Observable kan returnera värden/data från
 * Promises
 * DOM händelser
 
-## RxJS byggstenar
+### RxJS byggstenar
+RxJS består av:
+* Observables
+* Observers
+* Subscribers
+* Operators
+* Subject
+* Schedulers
 
