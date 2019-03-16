@@ -9,6 +9,6 @@ Om vi tittar på några olika exempel på dagliga uppgifter som vi som utvecklar
 ```
 // synchronous call
 
-let character = findCharacter(1);
+let character = findCharacter(1);
 console.log(`Found character: ${character.name}`);
 ```
