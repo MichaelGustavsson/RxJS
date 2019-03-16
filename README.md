@@ -93,21 +93,40 @@ Ett *Observer* object har tre valfria metoder:
 * complete(), som kan användas för att tala om när allt data i strömmen är hanterat och klart
 
 Låt oss se på ett par enkla exempel.
-1. Första exemplet använder vi konstruktor metoden för att skapa en ny *Observable*.
+1. I första exemplet använder vi konstruktor metoden för att skapa en ny *Observable*.
 ```
 import { Observable } from 'rxjs';
 import { characters } from './data';
 // Using the constructor method.
-let characters$ = new Observable(observer => {
+1. let characters$ = new Observable(observer => {
   if (something went wrong){
-    observer.error('Something bad happened’);
+2.    observer.error('Something bad happened’);
   }
   for (let character of characters) {
-    observer.next(character);
+3.    observer.next(character);
   }
-  () => observer.complete('We are done!');
+4.  () => observer.complete('We are done!');
 });
 ```
+2. I det andra exemplet så använder vi metoden **create** för att skapa en ny *Observable*.
+```
+import { Observable } from 'rxjs';
+import { characters } from './data';
+// Using the constructor method.
+1. let characters$ = Observable.create(observer => {
+  if (something went wrong){
+2.     observer.error('Something bad happened’);
+  }
+  for (let character of characters) {
+3.     observer.next(character);
+  }
+4.  () => observer.complete('We are done!');
+});
+```
+Rad 1. Skapar en ny instans av type **Observagle** som vi placerar i variabeln *characters$. Vi använder **$** tecknet för att indikerar att vi får tillbaka en *Observable*. **$** tecknet har blivit vedertagen standard för att indikera en *Observable* typ.
 
+Rad 2. Här använder vi metoden *error()* om något går fel.
 
+Rad 3. Om ingenting gått fel kan vi här fylla på vår *Observable* med data.
 
+Rad 4. Med hjälp av metoden *complete* talar vi här om att allt data är hanterat och inget mer finns att få.
