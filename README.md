@@ -10,7 +10,7 @@ För att starta demon kör `npm start` i kommandotolken eller i terminalen.
 
 Öppna webbläsaren och gå till http://localhost:8080/ öppna sedan webbutvecklare verktygen och gå till konsolen. Där bör nu en lista med lite Star Wars karaktärer visas.
 
-All kod är placerad i *main.ts* filen. I filen är koden grupperad i sektioner och bortkommenterade. För att leka med koden och testa bara ta bort kommentarerna spara och kolla i webbläsaren.
+All kod är placerad i *main.ts* filen. I filen är koden grupperad i sektioner och bortkommenterad. För att leka med koden och testa bara ta bort kommentarerna spara och kolla i webbläsaren.
 
 Jag använder webpack och webpack server som kompilerar om koden varje gång som koden sparas.
 
