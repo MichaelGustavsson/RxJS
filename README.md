@@ -161,6 +161,7 @@ Metoden *of()* tar en kommaseparerad lista av egentligen vad som helst.
 ```
 // RxJS v6+
 import { of } from 'rxjs';
+
 //emits any number of provided values in sequence
 const source$ = of('Michael', 15, characters[0].name);
 //output: 'Michael',15,'Luke Skywalker'
@@ -172,6 +173,9 @@ source$.subscribe(value => console.log(value));
 Metoden *from()* kan ta en *array* och omvandla den till en ström av data. Metoden kan även omvandla ett *promise* till en *observable* och även omvandla en sträng till en sekvens av enskilda tecken.
 
 ```
+// RxJS v6+
+import { of } from 'rxjs';
+
 // characters is an array
 from(characters).subscribe(value => console.log(value.name));
 ```
