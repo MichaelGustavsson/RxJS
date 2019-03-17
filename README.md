@@ -155,12 +155,13 @@ Det finns flera metoder att använda för att skapa *observables* ifrån befintl
 Låt oss titta på några av de vanligaste.
 
 ### of()
+Metoden *of()* tar en kommaseparerad lista av egentligen vad som helst.
 
 ```
 // RxJS v6+
 import { of } from 'rxjs';
 //emits any number of provided values in sequence
-const source$ = of('Michael', 15, false, characters[0].name);
+const source$ = of('Michael', 15, characters[0].name);
 //output: 'Michael',15,'Luke Skywalker'
 source$.subscribe(value => console.log(value));
 
