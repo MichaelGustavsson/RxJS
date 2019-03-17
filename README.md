@@ -142,7 +142,7 @@ characters$.subscribe(value => console.log(value));
 ```
 
 ## Skapa *Observables* från befintligt data
-Det finns flera metoder att skapa *observables* ifrån befintligt data, bland annat kan vi använda följande metoder:
+Det finns flera metoder att använda för att skapa *observables* ifrån befintligt data, bland annat kan vi använda följande metoder:
 * defer()
 * emptyFrom()
 * fromEvent()
