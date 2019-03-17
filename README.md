@@ -226,16 +226,29 @@ Det finns idag mer 100 *operators* att välja mellan, men som tur är de kategor
 * [Multicasting](https://www.learnrxjs.io/operators/multicasting/)
 
 ### Hur använder man *operators*
-För att använda *operators* från och med version 6 av RxJS, så används function *pipe()*.
+För att använda *operators* från och med version 6 av RxJS, så används funktionen *pipe()*.
 
 Låt oss ta några mycket enkla exempel.
+
+#### map()
 Första exemplet tar en sekvens ifrån data strömmen och multiplicerar varje tal med 2.
 
 ```
 import { Observable, of } from 'rxjs';
 import { map } from ’rxjs/operators';
+
 let observable$ = of(1, 2, 3, 4).pipe(map(value => value * 2));
 
 // output 2, 4, 6, 8
 
+```
+#### filter()
+Andra exemplet används *filter()* funktionen för att endast returnera tal som är större än 4.
+```
+import { Observable, of } from 'rxjs';
+import { filter } from ’rxjs/operators';
+
+let observable$ = of(1, 2, 3, 4).pipe(filter(value => value > 4));
+
+// output 6, 8
 ```
