@@ -77,6 +77,10 @@ Dokumentationens https://rxjs-dev.firebaseapp.com/api/index/class/Observable def
 
 Observables är den viktigaste komponenten i RxJS. En Observable ser allt data som en ström av information oavsett om det är synkron eller asynkron information som kommer via enkla funktioner, listor, DOM eller promises.
 
+Typen *Observable* har två metoder *lift()* och *subscribe()*
+* *lift()* används internt av en *observable* för att förbereda returnerandet av en ny *observable* när en *operator* används för att manipulera data strömmen.
+* *subscribe()* exekverar en *observable* och påbörjar arbetet med data strömmen
+
 ### Skapa Observables
 Det finns tre huvudsakliga sätt att skapa en *Observable* på.
 * Skapa en ny *Observable* genom att instantiera en ny instans av typen **Observable** via dess konstruktor
@@ -243,7 +247,7 @@ let observable$ = of(1, 2, 3, 4).pipe(map(value => value * 2));
 
 ```
 #### filter()
-Andra exemplet används *filter()* funktionen för att endast returnera tal som är större än 4.
+Andra exemplet använder *filter()* funktionen för att endast returnera tal som är större än 4.
 ```
 import { Observable, of } from 'rxjs';
 import { filter } from ’rxjs/operators';
@@ -252,3 +256,4 @@ let observable$ = of(1, 2, 3, 4).pipe(filter(value => value > 4));
 
 // output 6, 8
 ```
+### Subject
