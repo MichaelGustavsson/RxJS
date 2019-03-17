@@ -174,9 +174,20 @@ Metoden *from()* kan ta en *array* och omvandla den till en ström av data. Meto
 
 ```
 // RxJS v6+
-import { of } from 'rxjs';
+import { from } from 'rxjs';
 
 // characters is an array
 from(characters).subscribe(value => console.log(value.name));
 ```
+### fromEvent()
+Metoden *fromEvent* tar en DOM händelse och omvandlar den till en observerbar sekvens.
 
+```
+// RxJS v6+
+import { fromEvent } from 'rxjs';
+
+// Grab the displaybutton
+let button = document.getElementById('display');
+
+fromEvent(button, 'click').subscribe(value => console.log(event));
+```
