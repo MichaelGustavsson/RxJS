@@ -200,7 +200,7 @@ import { ajax, AjaxResponse } from 'rxjs/ajax';
 import { characters } from './data';
 
 //Grab the displaybutton
-let button = document.getElementById('display');
+let button = document.getElementById('display');
 
 //Connect the observable to the button, then create a new observable by calling the ajax() method inside the subscribe() method.
 fromEvent(button, 'click').subscribe(event => {
