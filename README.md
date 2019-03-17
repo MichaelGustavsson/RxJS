@@ -216,4 +216,4 @@ En *operator* returnerar alltid en ny *observable* vilket innebär att original 
 
 Det finns idag mer 100 *operators* att välja mellan, men som tur är de kategoriserade.
 
-* [Creation] (https://www.learnrxjs.io/operators/creation/)
+[Creation] ( https://www.learnrxjs.io/operators/creation/ )
