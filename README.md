@@ -1,10 +1,10 @@
 # RxJS
 Genomgång och exempelkod för ReactiveX och RxJS
 # Installation av demo koden
-Klona repository `git clone https://github.com/MichaelGustavsson/RxJS.git`
+Klona koden `git clone https://github.com/MichaelGustavsson/RxJS.git`
 till en mapp där ni vill ha koden.
 
-Kör sedan kommandot `npm install´ i kommandotolken eller i terminalen. Detta kommer att installera allt som behövs för att leka med demokoden.
+Kör sedan kommandot `npm install` i kommandotolken eller i terminalen. Detta kommer att installera allt som behövs för att leka med demokoden.
 
 För att starta demon kör `npm start` i kommandotolken eller i terminalen.
 
