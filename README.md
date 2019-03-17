@@ -1,5 +1,19 @@
 # RxJS
 Genomgång och exempelkod för ReactiveX och RxJS
+# Installation av demo koden
+Klona repository `git clone https://github.com/MichaelGustavsson/RxJS.git`
+till en mapp där ni vill ha koden.
+
+Kör sedan kommandot `npm install´ i kommandotolken eller i terminalen. Detta kommer att installera allt som behövs för att leka med demokoden.
+
+För att starta demon kör `npm start` i kommandotolken eller i terminalen.
+
+Öppna webbläsaren och gå till http://localhost:8080/ öppna sedan webbutvecklare verktygen och gå till konsolen. Där bör nu en lista med lite Star Wars karaktärer visas.
+
+All kod är placerad i *main.ts* filen. I filen är koden grupperad i sektioner och bortkommenterade. För att leka med koden och testa bara ta bort kommentarerna spara och kolla i webbläsaren.
+
+Jag använder webpack och webpack server som kompilerar om koden varje gång som koden sparas.
+
 ## Vad är RxJS?
 RxJS är ett bibliotek för att hantera asynkrona applikationer.
 RxJS ger oss ***ett*** API att hantera synkrona och asynkrona funktioner, genom att hantera data som en ström av information oavsett om det är synkrona eller asynkrona anrop.
