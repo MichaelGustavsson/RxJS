@@ -132,7 +132,7 @@ Rad 3. Om ingenting gått fel kan vi här fylla på vår *Observable* med data.
 Rad 4. Med hjälp av metoden *complete* talar vi här om att allt data är hanterat och inget mer finns att få.
 
 ### När exekveras en *Observable*?
-Det vi har skapat ovan är endast en instans av en *Observable*. Den kommer inte att köra och därmed kommer vi inte att kunna läsa ut värdena ifrån den. Så frågan är, hur startar vi exekveringen av en *Observable*?
+Det vi har skapat ovan är endast en instans av en *Observable*. Den kommer inte att köras(exekveras) och därmed kommer vi inte att kunna läsa ut värdena ifrån den. Så frågan är, hur startar vi exekveringen av en *Observable*?
 
 Svaret är: Vi måste prenumerera(*subscribe*) på en *Observable*.
 Hur gör vi det då? Enkelt använd metoden *subscribe* som finns på typen *Observable*
