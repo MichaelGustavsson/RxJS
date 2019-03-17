@@ -209,3 +209,11 @@ fromEvent(button, 'click').subscribe(event => {
   }
 });
 ```
+## Operators
+*Operators* är vad ger oss möjligheter att utföra avancerade och komplexa bearbetningar av *observables*.
+
+En *operator* returnerar alltid en ny *observable* vilket innebär att original strömmen inte påverkas. Vi kan också länka(*chain*) ihop flera *operators* i en och samma funktion.
+
+Det finns idag mer 100 *operators* att välja mellan, men som tur är de kategoriserade.
+
+* [Creation] (https://www.learnrxjs.io/operators/creation/)
