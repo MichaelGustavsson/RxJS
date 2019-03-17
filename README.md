@@ -2,7 +2,7 @@
 Genomgång och exempelkod för ReactiveX och RxJS
 ## Vad är RxJS?
 RxJS är ett bibliotek för att hantera asynkrona applikationer.
-RxJS ger oss ***ett*** API att hantera synkrona och asynkrona funktioner, genom att hantera data som en ström av information oavsett om det är synkront eller asynkront anrop.
+RxJS ger oss ***ett*** API att hantera synkrona och asynkrona funktioner, genom att hantera data som en ström av information oavsett om det är synkrona eller asynkrona anrop.
 ## Vad försöker RxJS lösa åt oss?
 Om vi tittar på några olika exempel på dagliga uppgifter som vi som utvecklare måste hantera.
 
@@ -190,4 +190,19 @@ import { fromEvent } from 'rxjs';
 let button = document.getElementById('display');
 
 fromEvent(button, 'click').subscribe(value => console.log(event));
+```
+### ajax()
+Metoden *ajax()* ger oss möjligheten att göra ett *Ajax* anrop och få tillbaka en *observable*
+
+```
+import { Observable, fromEvent} from 'rxjs';
+import { ajax, AjaxResponse } from 'rxjs/ajax';
+import { characters } from './data';
+
+let button = document.getElementById('display');
+fromEvent(button, 'click').subscribe(event => {
+  ajax('http://localhost:3000/characters').subscribe(ajaxResponse => {
+    console.log(ajaxResponse);
+  }
+});
 ```
