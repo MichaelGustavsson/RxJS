@@ -216,4 +216,11 @@ En *operator* returnerar alltid en ny *observable* vilket innebär att original 
 
 Det finns idag mer 100 *operators* att välja mellan, men som tur är de kategoriserade.
 
-[Creation] ( https://www.learnrxjs.io/operators/creation/ )
+* [Creation](https://www.learnrxjs.io/operators/creation/)
+* [Transformation](https://www.learnrxjs.io/operators/transformation/)
+* [Filtering](https://www.learnrxjs.io/operators/filtering/)
+* [Combination](https://www.learnrxjs.io/operators/combination/)
+* [Utility](https://www.learnrxjs.io/operators/utility/)
+* [Conditional](https://www.learnrxjs.io/operators/conditional/)
+* [Error Handling](https://www.learnrxjs.io/operators/error_handling/)
+* [Multicasting](https://www.learnrxjs.io/operators/multicasting/)
