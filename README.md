@@ -175,6 +175,7 @@ Metoden *from()* kan ta en *array* och omvandla den till en ström av data. Meto
 ```
 // RxJS v6+
 import { from } from 'rxjs';
+import { characters } from './data';
 
 // characters is an array
 from(characters).subscribe(value => console.log(value.name));
@@ -197,7 +198,6 @@ Metoden *ajax()* ger oss möjligheten att göra ett *Ajax* anrop och få tillbak
 ```
 import { Observable, fromEvent} from 'rxjs';
 import { ajax, AjaxResponse } from 'rxjs/ajax';
-import { characters } from './data';
 
 //Grab the displaybutton
 let button = document.getElementById('display');
