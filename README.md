@@ -145,6 +145,7 @@ characters$.subscribe(value => console.log(value));
 Det finns flera metoder att använda för att skapa *observables* ifrån befintligt data, bland annat kan vi använda följande metoder:
 * defer()
 * emptyFrom()
+* from()
 * fromEvent()
 * interval()
 * of()
@@ -167,4 +168,11 @@ source$.subscribe(value => console.log(value));
 
 ```
 
+### from()
+Metoden *from()* kan ta en *array* och omvandla den till en ström av data. Metoden kan även omvandla ett *promise* till en *observable* och även omvandla en sträng till en sekvens av enskilda tecken.
+
+```
+// characters is an array
+from(characters).subscribe(value => console.log(value.name));
+```
 
