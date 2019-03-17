@@ -257,3 +257,18 @@ let observable$ = of(1, 2, 3, 4).pipe(filter(value => value > 4));
 // output 6, 8
 ```
 ### Subject
+För att förstå vad *Subjects* är och nyttan av dem, måste vi först förstå hur en *Observable* hanterar flera prenumeranter(*subscribes*). Vid varje anrop med *subscribe()* metoden sker en ny exekvering av en *Observable*. Detta betyder att varje *subscribe()* tvingar data strömmen att starta om på nytt. Vilket med andra ord betyder att en *Observable* inte kan skicka data till mer än en *subscriber* åt gång, så kallat ***unicast***
+
+Så för att kunna hantera flera *subscribers* åt gången, så kallat ***multicast*** måste vi ha tillgång till en typ som kan hålla reda på vilka som vill *prenumerera* på data strömmen.
+
+Det är här som *Subject* kommer in. *Subject* typen är både en *Observable* med en *subscribe()* metod och en *Observer* med metoderna *next(), error()* och *complete()*. Dessutom hanterar *Subject* en lista på vilka som vill prenumerera på dataströmmen.
+
+Det finns fyra olika varianter på typen *Subject*
+* Subject
+  * Bastypen
+* AsyncSubject
+  * Returnera det sista värdet i strömmen
+* BehaviorSubject
+  * Kräver ett startvärde och returnerar aktuellt värde i dataströmmen till nya prenumeranter
+* ReplaySubject
+  * Kan lagra flera värden och returnera dem till alla prenumeranter
