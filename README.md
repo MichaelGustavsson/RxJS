@@ -154,3 +154,16 @@ Det finns flera metoder att skapa *observables* ifrån befintligt data, bland an
 
 Låt oss titta på några av de vanligaste.
 
+### of()
+
+```
+// RxJS v6+
+import { of } from 'rxjs';
+//emits any number of provided values in sequence
+const source$ = of('Michael', 15, false, characters[0].name);
+//output: 'Michael',15,'Luke Skywalker'
+source$.subscribe(value => console.log(value));
+
+```
+
+
